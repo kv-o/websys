@@ -27,7 +27,7 @@ are authenticated. The username and password don't need to match your system
 credentials, but please ensure they are strong to minimise any chance of system
 compromise.
 
-Open `http://localhost:2038`, sign in with the same credentials as the ones you
+Open <http://localhost:2038>, sign in with the same credentials as the ones you
 gave Websys initially, and enjoy!
 
 ## Contributing
