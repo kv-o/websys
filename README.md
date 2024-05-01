@@ -1,5 +1,5 @@
 # Websys
-A web-based app suite with a Go backend for interactting with the underlying system.
+A web-based app suite with a Go backend for interacting with the underlying system.
 
 ## Description
 
