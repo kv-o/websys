@@ -1,0 +1,11 @@
+APPS                                                                      SIGNIN
+
+NAME
+    signin - graphically sign in to the system
+
+INVOCATION
+    signin
+
+DESCRIPTION
+    Displays the current system name and platform information, and queries the
+    user for their username and password.
