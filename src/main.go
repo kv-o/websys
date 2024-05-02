@@ -11,6 +11,9 @@ import (
 	"golang.org/x/term"
 
 	"main/auth"
+	"main/filesys"
+	"main/launch"
+	"main/res"
 	"main/signin"
 )
 
@@ -38,6 +41,8 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+	auth.User.Username = strings.TrimSuffix(auth.User.Username, "\n")
+	auth.User.Username = strings.TrimSuffix(auth.User.Username, "\r")
 
 	fmt.Print("Password to sign in with (will not echo) [no default]: ")
 	password, err := term.ReadPassword(int(os.Stdin.Fd()))
@@ -48,7 +53,12 @@ func main() {
 	auth.User.Password = string(password)
 
 	mux := http.NewServeMux()
+	mux.HandleFunc("/res/", res.Asset)
+	mux.HandleFunc("/auth", auth.Handle)
+	mux.HandleFunc("/fs/", filesys.Asset)
+
 	mux.HandleFunc("/signin", signin.Main)
+	mux.HandleFunc("/launch", launch.Main)
 	mux.HandleFunc("/", redirect)
 
 	fmt.Println("\nListening on localhost:2038...")

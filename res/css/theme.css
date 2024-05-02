@@ -1,27 +1,27 @@
 @font-face {
     font-family: "Zed Sans Extended";
-    src: url("../fonts/zed-sans-extended.ttf") format("truetype");
+    src: url("/res/fonts/zed-sans-extended.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: "Zed Sans Extended";
-    src: url("../fonts/zed-sans-extendedbold.ttf") format("truetype");
+    src: url("/res/fonts/zed-sans-extendedbold.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: "Zed Sans Extended";
-    src: url("../fonts/zed-sans-extendedbolditalic.ttf") format("truetype");
+    src: url("/res/fonts/zed-sans-extendedbolditalic.ttf") format("truetype");
     font-weight: bold;
     font-style: italic;
     font-display: swap;
 }
 @font-face {
     font-family: "Zed Sans Extended";
-    src: url("../fonts/zed-sans-extendeditalic.ttf") format("truetype");
+    src: url("/res/fonts/zed-sans-extendeditalic.ttf") format("truetype");
     font-weight: normal;
     font-style: italic;
     font-display: swap;
