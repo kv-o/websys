@@ -1,0 +1,840 @@
+<!doctype html>
+<html
+    lang="en"
+    onclick="closeContextMenu()"
+    onkeydown="pageCheck(event)"
+    onload="changePage(0)"
+>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="preload"
+            href="../fonts/zed-sans-extended.ttf"
+            as="font"
+            type="font/ttf"
+            crossorigin
+        />
+        <link rel="stylesheet" href="../css/theme.css" />
+        <link rel="stylesheet" href="../css/launch.css" />
+
+        <title>Launch - WebSys</title>
+    </head>
+    <body>
+        <div id="search-bar">
+            <br />
+            <form>
+                <input placeholder="Search" type="search" id="search" />
+                <button
+                    border="none"
+                    font-size="50px"
+                    id="search-button"
+                    type="submit"
+                >
+                    &telrec;
+                    <!-- very important magnifying glass character -->
+                </button>
+            </form>
+            <br />
+        </div>
+        <section>
+            <div id="app-container" curr-page="1">
+                <div name="page-1" class="page">
+                    <div class="apps">
+                        <!-- row 1 -->
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+
+                        <!-- row 2 -->
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+
+                        <!-- row 3 -->
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+
+                        <!-- row 4 -->
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                    </div>
+                </div>
+                <div name="page-2" class="page">
+                    <div class="apps">
+                        <!-- row 1 -->
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>Visual Studio</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>Visual Studio</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>Visual Studio</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>Visual Studio</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>Visual Studio</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>Visual Studio</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>Visual Studio</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>Visual Studio</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>Visual Studio</p>
+                        </div>
+
+                        <!-- row 2 -->
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+
+                        <!-- row 3 -->
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+
+                        <!-- row 4 -->
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                    </div>
+                </div>
+                <div name="page-3" class="page">
+                    <div class="apps">
+                        <!-- row 1 -->
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+
+                        <!-- row 2 -->
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+
+                        <!-- row 3 -->
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+
+                        <!-- row 4 -->
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                    </div>
+                </div>
+                <div name="page-4" class="page">
+                    <div class="apps">
+                        <!-- row 1 -->
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>Visual Studio</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>Visual Studio</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>Visual Studio</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>Visual Studio</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>Visual Studio</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>Visual Studio</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>Visual Studio</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>Visual Studio</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>Visual Studio</p>
+                        </div>
+
+                        <!-- row 2 -->
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+
+                        <!-- row 3 -->
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+
+                        <!-- row 4 -->
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                        <div class="app">
+                            <img src="../icons/icon.png" />
+                            <br />
+                            <p>VS Code</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div
+            class="navi"
+            id="left"
+            onclick="changePage(-1)"
+            style="display: none"
+        >
+            <svg viewBox="0 0 150 150">
+                <path
+                    d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
+                    class="arrow"
+                    transform="translate(25, 25) "
+                ></path>
+            </svg>
+        </div>
+
+        <div class="navi" id="right" onclick="changePage(1)">
+            <svg viewBox="0 0 150 150">
+                <path
+                    d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
+                    class="arrow"
+                    transform="translate(125, 125) rotate(180) "
+                ></path>
+            </svg>
+        </div>
+        <div id="context-menu">
+            <p id="taskbarToggle" onclick="taskbar()">
+                Close Taskbar Automatically ✓
+            </p>
+        </div>
+    </body>
+    <script src="../js/script.js"></script>
+</html>

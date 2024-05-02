@@ -1,0 +1,76 @@
+#app-container {
+    overflow-x: hidden;
+    position: absolute;
+    width: 100vw;
+    height: 70vh;
+    bottom: 10vh;
+    white-space: nowrap;
+    z-index: 0;
+}
+#app-container::-webkit-scrollbar {
+    display: none;
+}
+.page {
+    display: inline-flex;
+    width: 80vw;
+    margin: 0 10vw;
+    transition: 300ms;
+    transform: translate(0vw, 0vh);
+}
+
+.apps {
+    float: left;
+    display: grid;
+    width: 80vw;
+    position: relative;
+    height: 70vh;
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.apps .app {
+    height: calc(16vh);
+    width: calc((80vw - 160px) / 9);
+}
+.apps .app p {
+    font-size: 15px;
+    margin-top: 5px;
+}
+.apps .app img {
+    height: calc(12vh - 30px);
+    width: auto;
+    margin: auto;
+}
+
+.navi {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    border-radius: 30px;
+    background: none;
+    fill: var(--fg-color);
+    top: calc(50vh - 20px);
+    position: absolute;
+    z-index: 5;
+    transition: 300ms;
+}
+.navi svg {
+    background: none;
+}
+
+.navi:hover {
+    background: var(--alt-bg);
+    transition: 300ms;
+}
+
+#left {
+    left: 5vw;
+    transition: 300ms;
+}
+#right {
+    right: 5vw;
+    transition: 300ms;
+}

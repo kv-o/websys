@@ -8,7 +8,7 @@ import (
 )
 
 func Main(w http.ResponseWriter, r *http.Request) {
-	htmlFile, err := os.Open("signin/ui.html")
+	htmlFile, err := os.Open("../res/html/ui.html")
 	if err != nil {
 		log.Println(err)
 	}

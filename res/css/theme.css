@@ -1,0 +1,176 @@
+@font-face {
+    font-family: "Zed Sans Extended";
+    src: url("../fonts/zed-sans-extended.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Zed Sans Extended";
+    src: url("../fonts/zed-sans-extendedbold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Zed Sans Extended";
+    src: url("../fonts/zed-sans-extendedbolditalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Zed Sans Extended";
+    src: url("../fonts/zed-sans-extendeditalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+:root {
+    --main-font: "Zed Sans Extended";
+    --secondary-font: "Zed Sans Extended";
+    --bg-color: #ffffff;
+    --alt-bg: #dddddd;
+    --fg-color: #000000;
+    --accent-color: #0077ff;
+    --hover-color: #005eff;
+    --title-size: 50px;
+    --font-size: 16px;
+    --subtitle-size: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #202020;
+        --fg-color: #ffffff;
+        --alt-bg: #404040;
+    }
+}
+* {
+    font-family: var(--secondary-font);
+    font-size: var(--font-size);
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+    overflow-y: hidden;
+}
+body {
+    height: 100vh;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: calc(100vh-40px);
+}
+p.h1 {
+    font-size: var(--title-size);
+    font-family: var(--main-font);
+}
+
+p.h2 {
+    font-size: var(--subtitle-size);
+    font-family: var(--main-font);
+}
+
+button {
+    border-radius: 5px;
+    border: none;
+    background-color: var(--accent-color);
+    padding: 10px 15px;
+    width: calc(30vw + 20px);
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button:hover {
+    background-color: var(--hover-color);
+}
+
+#search-button {
+    border-radius: 0px 5px 5px 0px;
+    background-color: var(--accent-color);
+    color: var(--fg-color);
+    width: auto;
+    font-size: 30px;
+    line-height: 20px;
+    text-align: center;
+    height: 49px;
+    border: 1px solid var(--fg-color);
+    display: inline-block;
+}
+#search-bar {
+    position: absolute;
+    top: 6vh;
+    width: 100vw;
+    left: 0;
+}
+#search {
+    display: inline-block;
+    padding: 11px 10px;
+    border-radius: 5px 0px 0px 5px;
+    border-right: 0;
+}
+
+input {
+    border: 1px solid var(--fg-color);
+    width: 30vw;
+    text-align: left;
+    line-height: 25px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+#toolbar {
+    transition: 600ms;
+    height: 40px;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    background: var(--alt-bg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#home-icon {
+    height: 30px;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+#datetime {
+    height: 30px;
+    padding: 0px;
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    background-color: var(--alt-bg);
+}
+
+#context-menu {
+    display: grid;
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+    background-color: var(--alt-bg);
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#context-menu p {
+    background-color: var(--alt-bg);
+    padding: 10px 5px;
+}
