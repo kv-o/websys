@@ -1,5 +1,6 @@
 # Checklist
 
+  - [ ] bookshelf
   - [ ] calculator
   - [ ] calendar
   - [ ] chat
@@ -12,7 +13,6 @@
   - [ ] juke
   - [ ] keymgr
   - [ ] launch (wip: wasabi)
-  - [ ] library
   - [ ] mail
   - [ ] maps
   - [ ] page
