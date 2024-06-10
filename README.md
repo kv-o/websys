@@ -32,14 +32,15 @@ gave Websys initially, and enjoy!
 
 ## Contributing
 
-The backend server source is stored in `src/`. Each subfolder in `src/` (except
-for `src/auth/`) holds the code for a separate app. This includes:
+The backend server source is stored in `src/`. All the app widget, layout, and
+logic can be found in `res/`. Each app has its contents in the following
+locations:
 
-  - the server handler for the app (`src/<APP>/main.go`)
-  - the HTML for the app window (`src/<APP>/ui.html`)
-  - the CSS for the app layout and theming (`src/<APP>/styles.css`)
-  - the JS for the app (`src/<APP>/main.js`)
+  - the server handler for the app (`src/<APP>/`)
+  - the HTML for the app window (`res/html/<APP>.html`)
+  - the CSS for the app layout and theming (`res/css/<APP>.css`)
+  - the JS for the app (`src/js/<APP>.js`)
 
-Other auxiliary HTML/CSS/JS/Go files may be present if they are necessary.
+Auxiliary files may exist elsewhere (e.g. `res/fonts/`, `res/css/theme.css`).
 
 Please send patches to <~kvo/websys@lists.sr.ht>
