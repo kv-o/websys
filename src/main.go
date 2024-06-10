@@ -23,12 +23,12 @@ func redirect(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Location", "/signin?redirect=" + url.QueryEscape(r.URL.String()))
 		w.WriteHeader(302)
 	} else if err == nil && r.URL.Path == "/" {
-		w.Header().Set("Location", "/search")
+		w.Header().Set("Location", "/launch")
 		w.WriteHeader(302)
 	} else {
 		w.WriteHeader(404)
 		cmd := strings.TrimPrefix(r.URL.Path, "/")
-		w.Write([]byte(cmd + ": command not found"))
+		w.Write([]byte(cmd + ": app not found"))
 	}
 }
 

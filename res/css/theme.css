@@ -87,11 +87,7 @@ button {
     padding: 10px 15px;
     width: calc(30vw + 20px);
 }
-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 button:hover {
     background-color: var(--hover-color);
 }
@@ -173,4 +169,8 @@ input {
 #context-menu p {
     background-color: var(--alt-bg);
     padding: 10px 5px;
+}
+.page-break {
+    page-break-after: always;
+    display: block;
 }
